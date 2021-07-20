@@ -1,10 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir=ltr>
 <html>
   <head>
     <link rel="stylesheet" href="./styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   </head>
   <body>
-    
+    <header>
+      <h3 id="title">What's for Dinner?</h3>
+      <button id="add-a-recipe">ADD A RECIPE</button>
+    </header>
+    <main>
+      <form requried>
+        <h2>What are you looking for?</h2>
+          <input type="radio" name="dish" id="side" value="side">Side</input><br>
+          <input type="radio" name="dish" id="main-dish" value="main dish">Main Dish</input><br>
+          <input type="radio" name="dish" id="dessert" value="dessert">Dessert</input><br>
+          <input type="radio" name="dish" id="entire-meal" value="entire meal">Entire Meal</input><br>
+        <button id="let's-cook">LET'S COOK!</button>
+      </form>
+      <section>
+        <h3 id="you-should-make">You should make: </h3>
+        <h1 id="name-of-dish"></h1>
+        <button id="clear">CLEAR</button>
+      </section>
+
+    </main>
+
   </body>
   <script type="text/javascript" src="main.js"></script>
 </html>
