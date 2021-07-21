@@ -46,12 +46,20 @@ input {
   margin-bottom: 20px;
 }
 
+.cookpot {
+  width: 200px;
+  height: 200px;
+  margin-left: 140px;
+  margin-top: 140px;
+  margin-bottom: 140px;
+}
 
 /* buttons */
 .add-a-recipe-button {
   float: right;
   text-transform: uppercase;
   border-radius: 5px;
+  border-style: hidden;
   padding: 5px;
   margin-right: 15px;
   margin-top: -45px
@@ -63,8 +71,14 @@ input {
 
 .lets-cook-button {
   text-transform: uppercase;
-  text-align: center;
+  border-radius: 5px;
+  border-style: hidden;
   background-color: #0fb9b1;
   padding-right: 40px;
+  padding-left: 40px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-left: 30px;
+
 
 }
