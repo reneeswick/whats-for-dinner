@@ -57,7 +57,7 @@ var userInput = document.getElementsByName('dish');
 var formOptionSide = document.querySelector('#side');
 var formOptionMain = document.querySelector('#main-dish');
 var formOptionDessert = document.querySelector('#dessert');
-var clearButton = document.querySelector('.clear');
+var formOptionEntireMeal = document.querySelector('#entire-meal');
 
 // event listeners
 letsCookButton.addEventListener('click', generateDish);
@@ -69,12 +69,13 @@ function generateDish(){
   var sideChecked = formOptionSide.checked;
   var mainChecked = formOptionMain.checked;
   var dessertChecked = formOptionDessert.checked;
+  var entireMealChecked = formOptionEntireMeal.checked;
 
   var randomSide = sides[Math.floor(Math.random() * sides.length)];
   var randomMain = mains[Math.floor(Math.random() * mains.length)];
   var randomDessert = desserts[Math.floor(Math.random() * desserts.length)];
 
-  if(sideChecked === true){
+   if(sideChecked === true){
     youShouldMake.innerHTML =
     `<h5 class="message">You should make:</h5>
      <h1 class="random-dish"> ${randomSide}!</h1>
@@ -89,10 +90,10 @@ function generateDish(){
       `<h5 class="message">You should make:</h5>
        <h1 class="random-dish"> ${randomDessert}!</h1>
        <button class="clear">Clear</button>`;
+    }else if(entireMealChecked === true){
+      youShouldMake.innerHTML =
+      `<h5 class="message">You should make:</h5>
+       <h1 class="random-dish"> ${randomSide}<br>${randomMain}<br>${randomDessert}!</h1>
+       <button class="clear">Clear</button>`;
     }
   };
-//
-//
-//
-//   }
-// };
