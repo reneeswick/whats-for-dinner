@@ -13,10 +13,6 @@ body {
   background-size:cover;
 }
 
-.hidden {
-  display:none;
-}
-
 header {
   border: medium solid teal;
   background-color: teal;
@@ -24,7 +20,6 @@ header {
   margin-left: -10px;
   margin-right: -10px;
 }
-
 
 main {
   display: grid;
@@ -79,7 +74,7 @@ input {
   text-align: center;
   font-size: 14pt;
   font-style: italic;
-  margin-top: 200px;
+  margin-top: 150px;
 }
 
 .random-dish {
@@ -87,6 +82,7 @@ input {
   font-size: 30pt;
   margin-top: -30px;
 }
+
 /* buttons */
 .add-a-recipe-button {
   float: right;
@@ -97,20 +93,21 @@ input {
   margin-right: 15px;
   margin-top: -43px
 }
+.hidden {
+  display: none;
+}
 
 .clear {
   text-transform: uppercase;
-  float: right;
   color: white;
   background-color:#95a5a6;
   border-style: hidden;
   border-radius: 5px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-top: 100px;
-  margin-right: 20px;
+  height: 35px;
+  width: 112px;
+  grid-column: 2;
+  margin-left:60%;
+  margin-top:-30%;
 }
 
 .lets-cook-button {
