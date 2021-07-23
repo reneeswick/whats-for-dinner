@@ -37,9 +37,6 @@ form {
   width: 484px;
 }
 
-section {
-  background-color: rgba(225, 225, 225, .9);
-}
 
 .title {
   margin-left: 20px;
@@ -49,6 +46,11 @@ section {
 .what-are-you-looking-for {
   margin-top: 50px;
   margin-left: 30px;
+}
+
+.what-are-you-looking-for:after {
+  content: " *";
+  color:#ee5253;
 }
 
 input {
